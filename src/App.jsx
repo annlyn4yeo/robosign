@@ -9,16 +9,9 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* Input field */}
       <NameInput onUpdate={setName} />
-
-      {/* Keyboard Display */}
       <KeyboardDisplay name={name} />
-
-      {/* Signature Preview */}
       <SignaturePreview name={name} />
-
-      {/* Fixed logo at bottom-right */}
       <div className="logo-bottom-right">ROBOSIGN™</div>
     </div>
   );
