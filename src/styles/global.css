@@ -1,0 +1,70 @@
+/* src/styles/global.css */
+:root {
+  --bg: #000000;
+  --panel: #0a0a0a;
+  --text: #eeeeee;
+  --muted: #aaaaaa;
+  --accent: #08cb00;
+  --border: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.footer {
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  color: var(--muted);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Headings */
+h1,
+h2 {
+  margin: 0;
+  font-weight: 600;
+}
+h1 {
+  color: var(--accent);
+  font-size: 24px;
+}
+h2 {
+  font-size: 18px;
+}

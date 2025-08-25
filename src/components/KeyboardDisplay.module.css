@@ -1,0 +1,60 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0.9;
+  font-size: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-light);
+  font-weight: 400;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .key {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+}
+
+.active {
+  color: var(--accent);
+  font-weight: 600;
+  background: rgba(8, 203, 0, 0.15);
+  box-shadow: 0 0 8px rgba(8, 203, 0, 0.6);
+}
+
+.enteredName {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+.placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  font-style: italic;
+}
